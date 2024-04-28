@@ -16,7 +16,7 @@ function youtube_list() {
 	if($videos && $enable == true) {
 		ob_start();
 		?>
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/youtube.css" />
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/youtube.css" />
 		<div class="row row-small">
 			<div class="col medium-12">
 				<div class="col-inner video-gallery-container" style="background-color: <?php echo get_field('video_list_border','option'); ?>;">
@@ -67,7 +67,7 @@ function youtube_list() {
 				</div>
 			</div>
 		</div>
-		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri(); ?>/js/youtube.js'></script>
+		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri(); ?>/youtube.js'></script>
 		<?php
 		$play = ob_get_contents();
 		ob_end_clean();
