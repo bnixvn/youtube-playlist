@@ -1,0 +1,190 @@
+[
+    {
+        "key": "group_64e76d667d007",
+        "title": "Cài đặt youtube",
+        "fields": [
+            {
+                "key": "field_65051392fad03",
+                "label": "Bật\/Tắt Video Playlist",
+                "name": "enable_playlist",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1,
+                "ui_on_text": "Bật",
+                "ui_off_text": "Tắt",
+                "ui": 1
+            },
+            {
+                "key": "field_65000971943da",
+                "label": "Màu nền video list",
+                "name": "video_list_bg",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_65000d30b504c",
+                "label": "Màu viền trên video list",
+                "name": "video_list_border",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_64e780224d74d",
+                "label": "Video Playlist",
+                "name": "video_playlist",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Only Youtube",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 4,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_64e9d4521d0a2",
+                        "label": "Video Link",
+                        "name": "video_link",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_64e780224d74d"
+                    },
+                    {
+                        "key": "field_64e9d54d1d0a3",
+                        "label": "Tên Video",
+                        "name": "video_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_64e780224d74d"
+                    },
+                    {
+                        "key": "field_64eae491ed204",
+                        "label": "Mô tả",
+                        "name": "video_des",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_64e780224d74d"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "youtube-playlist"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "ui_options_page_65f72c0433dd2",
+        "title": "Youtube Playlist",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Youtube Playlist",
+        "menu_slug": "youtube-playlist",
+        "parent_slug": "none",
+        "advanced_configuration": 1,
+        "icon_url": "dashicons-youtube",
+        "menu_title": "Youtube Playlist",
+        "position": 4,
+        "redirect": 0,
+        "description": "",
+        "update_button": "Cập nhật",
+        "updated_message": "Đã cập nhật",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": 1
+    }
+]
